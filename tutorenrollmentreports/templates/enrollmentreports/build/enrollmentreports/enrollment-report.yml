@@ -1,0 +1,6 @@
+# Emails enrollment reports.
+---
+- hosts: localhost
+  become: no
+  roles:
+    - enrollmentreports
