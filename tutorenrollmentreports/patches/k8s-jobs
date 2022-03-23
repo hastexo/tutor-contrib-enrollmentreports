@@ -19,7 +19,7 @@ spec:
                 - 'enrollment-report.yml'
               volumeMounts:
                 - name: enrollmentreports-mysql-config
-                  mountPath: '/etc/my.cnf'
+                  mountPath: '/root/.my.cnf'
                 - name: enrollmentreports-inventory-config
                   mountPath: '/etc/ansible/group_vars/all'
           volumes:
