@@ -1,3 +1,4 @@
+enrollment_report_hostname: "{{ LMS_HOST }}"
 enrollment_report_database: "{{ ENROLLMENTREPORTS_DB_NAME }}"
 {% if RUN_SMTP or SMTP_HOST %}
 enrollment_report_mail_enable: true
