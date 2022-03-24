@@ -17,7 +17,6 @@ config = {
     "defaults": {
         "VERSION": __version__,
         "DOCKER_IMAGE": "{{ DOCKER_REGISTRY }}enrollmentreports:{{ ENROLLMENTREPORTS_VERSION }}",  # noqa: E501
-        "DB_NAME": "{{ OPENEDX_MYSQL_DATABASE }}",
         "MAIL_FROM": "{{ SMTP_USERNAME }}",
         "K8S_CRONJOB_SCHEDULE": "0 0 1 * *",
     },
