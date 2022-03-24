@@ -1,18 +1,75 @@
 # Enrollment reports plugin for [Tutor](https://docs.tutor.overhang.io)
 
+This is an **experimental** plugin for
+[Tutor](https://docs.tutor.overhang.io) that creates monthly
+enrollment reports (in the
+[`.tsv`](https://en.wikipedia.org/wiki/Tab-separated_values) format),
+and emails them to a configurable address.
+
+It is meant to be run once a month, and will produce enrollment
+reports covering a period of one month.
+
 ## Installation
 
     pip install git+https://github.com/hastexo/tutor-contrib-enrollmentreports
 
 ## Usage
+
 To enable this plugin, run:
 
     tutor plugins enable enrollmentreports
 
-
 Before starting Tutor, build the docker image:
 
     tutor images build enrollmentreports
+
+To create enrollment reports in the Tutor local deployment, run:
+
+    tutor local enrollmentreports
+
+If you want to run this command periodically in a local deployment,
+you can invoke this command from a cron job on your host.
+
+For a Kubernetes deployment, this plugin defines a
+[CronJob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
+which runs the report generation script according to the schedule
+defined in the `ENROLLMENTREPORTS_K8S_CRONJOB_SCHEDULE` configuration
+parameter.
+
+
+## Configuration
+
+The following values can all modified with the `tutor config save --set
+PARAM_NAME=VALUE` commands, or your can edit your Tutor `config.yml`
+file directly.
+
+### Tutor configuration parameters
+
+You must
+
+* *either* set `RUN_SMTP: true` (so that Tutor configures an SMTP server
+  for you),
+* *or* configure your SMTP client credentials with
+  * `SMTP_HOST`,
+  * `SMTP_PORT`,
+  * `SMTP_USERNAME`,
+  * `SMTP_PASSWORD`, and
+  * `SMTP_USE_TLS` or `SMTP_USE_SSL`.
+
+### Plugin configuration parameters
+
+* `ENROLLMENTREPORTS_MAIL_TO`: a list of addresses to send the
+  enrollment reports to. Default `[]`.
+* `ENROLLMENTREPORTS_MAIL_FROM`: the sender address to use on the
+  enrollment reports. Defaults to the value of `SMTP_USERNAME`; you
+  must override this if you want to use a different sender address.
+* `ENROLLMENTREPORTS_DOCKER_IMAGE`: the Docker image used to spin up
+  the job pod (set this to an image reference in your local registry,
+  unless your Tutor configuration already sets `DOCKER_REGISTRY` to
+  point to that)
+* `ENROLLMENTREPORTS_K8S_CRONJOB_SCHEDULE` (default `"0 0 1 * *"`,
+  that is once a month at midnight, on the first day of the month)
+
 
 ## License
 
