@@ -11,7 +11,7 @@ reports covering a period of one month.
 
 ## Installation
 
-    pip install git+https://github.com/hastexo/tutor-contrib-enrollmentreports@v0.0.1
+    pip install git+https://github.com/hastexo/tutor-contrib-enrollmentreports@v0.1.0
 
 ## Usage
 
