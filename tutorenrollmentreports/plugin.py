@@ -15,6 +15,8 @@ config = {
     "defaults": {
         "VERSION": __version__,
         "DOCKER_IMAGE": "{{ DOCKER_REGISTRY }}enrollmentreports:{{ ENROLLMENTREPORTS_VERSION }}",  # noqa: E501
+        "REPOSITORY": "https://github.com/hastexo/ansible-role-enrollmentreports.git",  # noqa: E501
+        "REVISION": "main",
         "MAIL_FROM": "{{ SMTP_USERNAME }}",
         "K8S_CRONJOB_SCHEDULE": "0 0 1 * *",
     },
