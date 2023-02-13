@@ -18,6 +18,7 @@ config = {
         "REPOSITORY": "https://github.com/hastexo/ansible-role-enrollmentreports.git",  # noqa: E501
         "REVISION": "main",
         "MAIL_FROM": "{{ SMTP_USERNAME }}",
+        "FREQUENCY": "monthly",
         "K8S_CRONJOB_SCHEDULE": "0 0 1 * *",
     },
 }

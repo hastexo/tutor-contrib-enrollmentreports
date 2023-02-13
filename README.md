@@ -86,6 +86,8 @@ You must
   the job pod (set this to an image reference in your local registry,
   unless your Tutor configuration already sets `DOCKER_REGISTRY` to
   point to that)
+* `ENROLLMENTREPORTS_FREQUENCY`: the frequency with which enrollment
+  reports are generated (default `monthly`)
 * `ENROLLMENTREPORTS_K8S_CRONJOB_SCHEDULE` (default `"0 0 1 * *"`,
   that is once a month at midnight, on the first day of the month)
 
