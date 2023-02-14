@@ -1,4 +1,4 @@
-## Unreleased
+## Version 1.1.0 (2023-02-14)
 
 * Add the ability to set the frequency with which enrollment reports are
   generated, with `ENROLLMENTREPORTS_FREQUENCY`. Default `monthly`, also
