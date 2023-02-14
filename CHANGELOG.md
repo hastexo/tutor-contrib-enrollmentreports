@@ -1,3 +1,12 @@
+## Unreleased
+
+* Add the ability to set the frequency with which enrollment reports are
+  generated, with `ENROLLMENTREPORTS_FREQUENCY`. Default `monthly`, also
+  supports `weekly`.
+* Add the ability to fetch the Ansible role from a custom repo
+  (with `ENROLLMENTREPORTS_REPOSITORY`) and/or custom branch/tag/commit
+  (with `ENROLLMENTREPORTS_REVISION`).
+
 ## Version 1.0.0 (2022-08-08)
 
 * [BREAKING CHANGE] Support Tutor 14 and Open edX Nutmeg. This entails
