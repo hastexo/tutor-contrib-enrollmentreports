@@ -1,3 +1,8 @@
+## Unreleased
+
+* [feature] Add ability to enable and disable the Kubernetes CronJob
+  by suspending them (with `ENROLLMENTREPORTS_K8S_CRONJOB_ENABLE`).
+
 ## Version 1.1.0 (2023-02-14)
 
 * Add the ability to set the frequency with which enrollment reports are

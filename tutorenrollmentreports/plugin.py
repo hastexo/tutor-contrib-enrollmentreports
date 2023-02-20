@@ -19,7 +19,9 @@ config = {
         "REVISION": "main",
         "MAIL_FROM": "{{ SMTP_USERNAME }}",
         "FREQUENCY": "monthly",
+        "K8S_CRONJOB_ENABLE": True,
         "K8S_CRONJOB_SCHEDULE": "0 0 1 * *",
+        "K8S_CRONJOB_STARTING_DEADLINE_SECONDS": 900,
     },
 }
 

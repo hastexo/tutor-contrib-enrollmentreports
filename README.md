@@ -90,6 +90,12 @@ You must
   reports are generated (default `monthly`)
 * `ENROLLMENTREPORTS_K8S_CRONJOB_SCHEDULE` (default `"0 0 1 * *"`,
   that is once a month at midnight, on the first day of the month)
+* `ENROLLMENTREPORTS_K8S_CRONJOB_ENABLE` (default `true`). Set this to
+  `false` to disable (suspend) the generation of enrollment reports.
+* `ENROLLMENTREPORTS_K8S_CRONJOB_STARTING_DEADLINE_SECONDS` (default:
+  `900`). See [the Kubernetes
+  documentation](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#starting-deadline)
+  for details on job start deadlines.
 
 
 ## License
