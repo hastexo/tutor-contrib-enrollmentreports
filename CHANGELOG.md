@@ -1,4 +1,4 @@
-## Unreleased
+## Version 1.2.0 (2023-02-20)
 
 * [feature] Add ability to enable and disable the Kubernetes CronJob
   by suspending them (with `ENROLLMENTREPORTS_K8S_CRONJOB_ENABLE`).
