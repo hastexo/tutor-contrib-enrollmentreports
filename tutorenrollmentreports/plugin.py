@@ -48,7 +48,7 @@ hooks.Filters.IMAGES_PUSH.add_item((
 def enrollmentreports(context):
     config = tutor_config.load(context.root)
     job_runner = context.job_runner(config)
-    job_runner.run_job(
+    job_runner.run_task(
         service="enrollmentreports",
         command="ansible-playbook enrollment-report.yml"
     )
