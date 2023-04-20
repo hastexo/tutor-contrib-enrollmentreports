@@ -1,3 +1,10 @@
+## Unreleased
+
+* Clone a revision from the Ansible role repo that matches the plugin
+  version. That is, for version 2.1.0 of the plugin, clone the
+  `v2.1.0` tag of the Ansible role repo (unless overridden with
+  `ENROLLMENTREPORTS_REVISION`).
+
 ## Version 2.0.0 (2023-03-15)
 
 * Add support for Tutor 15 and Open edX Olive.
