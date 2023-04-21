@@ -1,4 +1,4 @@
-## Unreleased
+## Version 2.1.0 (2023-04-21)
 
 * Clone a revision from the Ansible role repo that matches the plugin
   version. That is, for version 2.1.0 of the plugin, clone the

@@ -31,7 +31,7 @@ appropriate one:
 
 ## Installation
 
-    pip install git+https://github.com/hastexo/tutor-contrib-enrollmentreports@v2.0.0
+    pip install git+https://github.com/hastexo/tutor-contrib-enrollmentreports@v2.1.0
 
 ## Usage
 
