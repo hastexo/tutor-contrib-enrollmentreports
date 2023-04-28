@@ -18,6 +18,9 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v3
       with:
+        # Checkout the full history, rather than just the top commit,
+        # so as not to confuse setuptools-scm.
+        fetch-depth: 0
         # Checkout a pull request's HEAD commit instead of the merge
         # commit, so that gitlint lints the correct commit message.
         ref: ${{ github.event.pull_request.head.sha }}
