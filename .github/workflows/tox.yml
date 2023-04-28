@@ -28,5 +28,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install tox tox-gh-actions
-    - name: Test with tox
+    - env:
+        DOCKER_REGISTRY: "ghcr.io/${{ github.repository }}/"
+      name: Test with tox
       run: tox
