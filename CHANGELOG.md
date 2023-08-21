@@ -1,3 +1,7 @@
+## Unreleased
+
+* [Enhancement] Support Tutor 16, Open edX Palm and Python 3.11.
+
 ## Version 2.1.0 (2023-04-21)
 
 * Clone a revision from the Ansible role repo that matches the plugin
