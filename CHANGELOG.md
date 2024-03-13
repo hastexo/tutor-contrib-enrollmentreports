@@ -1,3 +1,6 @@
+## Unreleased
+* [Enhancement] Support Python 3.12.
+
 ## Version 2.3.0 (2024-01-12)
 
 * [Enhancement] Support Tutor 17 and Open edX Quince.
