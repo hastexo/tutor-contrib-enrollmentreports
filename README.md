@@ -33,7 +33,7 @@ appropriate one:
 
 ## Installation
 
-    pip install git+https://github.com/hastexo/tutor-contrib-enrollmentreports@v2.3.0
+    pip install git+https://github.com/hastexo/tutor-contrib-enrollmentreports@v2.4.0
 
 ## Usage
 

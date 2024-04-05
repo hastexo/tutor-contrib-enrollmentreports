@@ -1,4 +1,4 @@
-## Unreleased
+## Version 2.4.0 (2024-04-05)
 * [Enhancement] Support Python 3.12.
 
 ## Version 2.3.0 (2024-01-12)
