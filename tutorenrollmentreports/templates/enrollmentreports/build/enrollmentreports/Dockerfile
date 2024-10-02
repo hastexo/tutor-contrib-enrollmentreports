@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 RUN mkdir -p /etc/ansible/roles/enrollmentreports /etc/ansible/group_vars
 RUN apt-get update && \
     apt install -y ansible git default-mysql-client rsync
