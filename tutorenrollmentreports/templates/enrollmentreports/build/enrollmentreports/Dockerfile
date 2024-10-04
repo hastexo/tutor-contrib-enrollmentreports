@@ -1,4 +1,6 @@
 FROM ubuntu:22.04
+ENV TZ=Etc/UTC
+ENV DEBIAN_FRONTEND=noninteractive
 RUN mkdir -p /etc/ansible/roles/enrollmentreports /etc/ansible/group_vars
 RUN apt-get update && \
     apt install -y ansible git default-mysql-client rsync
