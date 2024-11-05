@@ -1,3 +1,7 @@
+## Version 3.1.0 (2024-11-05)
+
+* [Enhancement] Install version 3.1.0 of ansible-role-enrollmentreports by default.
+
 ## Version 3.0.0 (2024-10-07)
 
 * [Enhancement] Drop support for Python 3.8; update the Ubuntu base image to
