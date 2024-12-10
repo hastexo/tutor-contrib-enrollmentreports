@@ -1,3 +1,7 @@
+## Unreleased
+
+* [Enhancement] Support Tutor 19 and Open edX Sumac.
+
 ## Version 3.1.0 (2024-11-05)
 
 * [Enhancement] Install version 3.1.0 of ansible-role-enrollmentreports by default.
