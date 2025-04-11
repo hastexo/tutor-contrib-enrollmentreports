@@ -17,6 +17,7 @@ config = {
     },
     "defaults": {
         "VERSION": __version__,
+        "BASE_IMAGE": "docker.io/ubuntu:22.04",
         "DOCKER_IMAGE": "{{ DOCKER_REGISTRY }}enrollmentreports:{{ ENROLLMENTREPORTS_VERSION }}",  # noqa: E501
         "REPOSITORY": "https://github.com/hastexo/ansible-role-enrollmentreports.git",  # noqa: E501
         "REVISION": f"v{__version__}",

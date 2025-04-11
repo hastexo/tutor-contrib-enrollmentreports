@@ -87,6 +87,8 @@ You must
 * `ENROLLMENTREPORTS_MAIL_FROM`: the sender address to use on the
   enrollment reports. Defaults to the value of `SMTP_USERNAME`; you
   must override this if you want to use a different sender address.
+* `ENROLLMENTREPORTS_BASE_IMAGE`: the base image for the `Dockerfile`. 
+  (default `docker.io/ubuntu:22.04`)
 * `ENROLLMENTREPORTS_DOCKER_IMAGE`: the Docker image used to spin up
   the job pod (set this to an image reference in your local registry,
   unless your Tutor configuration already sets `DOCKER_REGISTRY` to
