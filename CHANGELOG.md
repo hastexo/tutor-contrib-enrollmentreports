@@ -1,4 +1,4 @@
-## Unreleased
+## Version 3.3.0 (2025-04-15)
 
 * [Enhancement] Allow to override the base image for builds.
 
